@@ -1,4 +1,4 @@
-const album = {
+ const album = {
   title: 'The Colors',
   artist: 'Pablo Picasso',
   releaseInfo: '1909 Spanish Records',
@@ -11,3 +11,8 @@ const album = {
     { title: 'Magenta', duration: '374.22', soundFileUrl: 'assets/music/magenta.mp3' }
   ]
 };
+
+{
+$('#album-title').text(album.title);
+$('img#album-cover-art').attr('src', album.albumArtUrl);  
+}
