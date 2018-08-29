@@ -28,6 +28,7 @@
     player.playPause(previousSong)
      });
 
+/* event handler for #time-control input */
           $('#time-control input').on('input', function (event) {
          player.skipTo(event.target.value);
            });
@@ -41,4 +42,8 @@
          $('#time-control input').val(percent);
        }, 1000);
 
+/* event handler for #volume-control input */
+       $('#volume-control input').on('input', function (event) {
+         player.setVolume(event.target.value);
+       });
 }
