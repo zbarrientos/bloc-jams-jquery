@@ -5,8 +5,7 @@ class Helper {
 
         player.playPause(song);
 
-        $('#time-control playing').on('playing', function (event) {
-           });
+
 
         if (player.playState !== 'playing') { return; }
         const duration = player.getDuration();
