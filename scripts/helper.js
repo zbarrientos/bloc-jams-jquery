@@ -1,15 +1,8 @@
 class Helper {
-  const helper = new Helper();
-
-    playPauseAndUpdate(song) = {
-
-        player.playPause(song);
-
-
-
-        if (player.playState !== 'playing') { return; }
-        const duration = player.getDuration();
-        $('#time-control .total-time').text( duration );
-
+  playPauseAndUpdate(song) {
+    player.playPause(song);
+    const duration = player.getDuration();
+    $('#time-control .total-time').text ( duration );
     }
-}
+   }
+  const helper = new Helper();
