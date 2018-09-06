@@ -1,3 +1,4 @@
+/* displaying total time */
    class Helper {
      playPauseAndUpdate(song) {
        const duration = player.getDuration();
